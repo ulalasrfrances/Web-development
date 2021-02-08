@@ -33,6 +33,7 @@
 
         .p{
             text-align: center;
+            text-justify: inter-word;
             padding: 8px;
             margin : 5px 90px 5px 90px;
             font-size: 18px;
@@ -42,18 +43,68 @@
             opacity: 1.5; 
         }
 
+        .row{
+            width: 100%;
+        }
+        @media(min-width:300px) and (max-width :1024px){
+            .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,
+            .col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,
+            .col-sm-11,.col-sm-12{
+                float: left;
+            }
+            .col-sm-1{
+                width: 8.33%;
+            }
+            .col-sm-2{
+                width: 16.66%;
+            }
+            .col-sm-3{
+                width: 25%;
+            }
+            .col-sm-4{
+                width: 33.33%;
+            }
+            .col-sm-5{
+                width: 41.66%;
+            }
+            .col-sm-6{
+                width: 50%;
+            }
+            .col-sm-7{
+                width: 58.33%;
+            }
+            .col-sm-8{
+                width: 66.66%;
+            }
+            .col-sm-9{
+                width: 75%;
+            }
+            .col-sm-10{
+                width: 83.33%;
+            }
+            .col-sm-11{
+                width: 91.66%;
+            }
+            .col-sm-12{
+                width: 100%;
+            }
+        }
+
     </style>
 </head>
 <body id="content">
     <h1 class="h1">Antony Daniel Rojas Asparrin</h1>
     <img src = "https://media-exp1.licdn.com/dms/image/C4D03AQGzWZKNiAfTVg/profile-displayphoto-shrink_800_800/0/1605046824260?e=1617840000&v=beta&t=zrpjCLqw6DlF43nkWJUIxCzLacHLi1pA0ax5CarHyfk" style = "width:200px;height:200px" class="center" alt="Avatar">
     <h2 class="h2">Perfil</h2>
-    <p  class="p"> 
-        Estudiante de la carrera de Ingeniería de Sistemas de la Facultad de<br> 
-        Ingeniería Industrial y de Sistemas (FIIS) de la Universidad Nacional<br> 
-        de Ingeniería con conocimientos en programación en Python, bases de datos<br> 
-        relacionales, estadística aplicada, y con un nivel de inglés intermedio.
-    </p>
+    <div class="row">
+        <div class="col-sm-12"><p class="p">
+            Estudiante de la carrera de Ingeniería de Sistemas de la Facultad de<br> 
+            Ingeniería Industrial y de Sistemas (FIIS) de la Universidad Nacional<br> 
+            de Ingeniería con conocimientos en programación en Python, bases de datos<br> 
+            relacionales, estadística aplicada, y con un nivel de inglés intermedio.      
+        </p>
+    </div>
+    </div>
     <h2 class = "h2">Educación</h2>
     <h3 class="h3">Universidad Nacional de Ingenieria</h3>
     <p class="p">Carrera: Ingenieria de Sistemas <br> Ciclo: Sexto </p>
