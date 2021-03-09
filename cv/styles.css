@@ -6,6 +6,7 @@ html,body{
 }
 #content{
     background-color: #ffffff;
+    font-family: helvetica-w01-light,helvetica-w02-light,sans-serif;
     background-size: 100px;
     margin: 0px;
     width: 100%;
@@ -13,10 +14,11 @@ html,body{
 }
 
 .h1,.h2,.h3{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
     text-align: center;
     color:#000000;
+}
+.h1{
+    font-size: 80px;
 }
 
 .p{
@@ -24,8 +26,7 @@ html,body{
     text-justify: inter-word;
     padding: 8px;
     margin : 5px 90px 5px 90px;
-    font-size: 18px;
-    font-weight: 100;
+    font-size: 24px;
 }
 
 .landscape{
@@ -49,11 +50,12 @@ html,body{
     width: 100%;
 }
 .navigation{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: right;
     margin-right: 20px;
+    margin-top: auto;
 }
+
 @media(min-width:300px) and (max-width :1024px){
     .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,
     .col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,
@@ -106,7 +108,9 @@ html,body{
     position: relative;
 }
 .footer{
-    background-color: burlywood;
+    background-color:dimgray;
+    height: 600px;
+    color: azure;
 }
 a:link, a:visited,a:active{
     text-decoration:none;
@@ -114,4 +118,11 @@ a:link, a:visited,a:active{
 }
 .navigation{
     margin-block-start: 6px;
+}
+.container{
+    height: 100%;
+}
+.columna{
+    float: left;
+    width: 50%;
 }
