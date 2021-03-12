@@ -1,8 +1,11 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html,body{
     height: 100%;
+    margin: 0;
 }
 #content{
     background-color: #ffffff;
@@ -38,8 +41,8 @@ html,body{
 }
 
 .landscape{
-    background-image: url(https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80);
-    height: 100%;
+    background-image: url(https://previews.123rf.com/images/torky/torky1606/torky160600051/58703005-surf-waves-sea-waves-graphic-ocean-wave-sketch.jpg);
+    height:100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,4 +96,10 @@ a:link, a:visited,a:active{
     width: 50%;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+#perfil{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
