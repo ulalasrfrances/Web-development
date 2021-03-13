@@ -23,6 +23,7 @@ body {
     ;
   }
 
+
 .navigation{
     font-size: 20px;
     text-align: center;
@@ -45,8 +46,9 @@ a:link, a:visited,a:active{
     margin-bottom: 30px;
 }
 
+
 #box-container {
-    height: 500px;
+    height: 100%;
     display: flex;
 }
 
@@ -69,23 +71,81 @@ a:link, a:visited,a:active{
     height: 50%;
     text-align: left;
 }
-@media(max-width:944px){
+
+.one{
+    grid-area: one;
+    background-color: greenyellow;
+}
+.two{
+    grid-area: two;
+    background-color: cadetblue;
+}
+.three{
+    grid-area: three;
+    background-color: brown;
+}
+.four{
+    grid-area: four;
+    background-color: brown;
+}
+.five{
+    grid-area: five;
+    background-color: brown;
+}
+.six{
+    grid-area: six;
+    background-color: brown;
+}
+
+#box-education{
+    display: grid;
+    margin-left: 250px;
+    margin-right: 250px;  
+    gap: 5px;
+    grid-template-columns: 70% 30%;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
+
+@media(max-width:1113px){
     #box-container{
         flex-direction: column;
         align-items: center;
     }
     #box-1{
-        width: 80%;
+        width: 70%;
         height: 60%;
-        text-align: center;
+        text-align: left;
     }
     #box-2{
-        width: 80%;
+        width: 50%;
         height: 60%;
     }
     #box-3{
-        width: 80%;
+        width: 70%;
         height: 60%;
+    }
+    #box-education{
+        grid-template-columns: auto;
+        grid-template-areas:
+        "one" 
+        "two"
+        "three" 
+        "four"
+        "five "
+        "six";
+        align-content: center;   
+    }
+
+}
+@media(min-width:1115px){
+    .p{
+        margin-left: 250px;
+    }
+    #perfil{
+        margin-left: 250px;
     }
 }
 @media(max-width:349px){
@@ -94,4 +154,13 @@ a:link, a:visited,a:active{
         height: 55%;
         text-align: center;
     }
+    #box-education{
+        align-items: center; 
+        grid-template-columns: 100px;
+    } 
 }
+.period{
+    font-size: 30px;
+    text-align: right;
+}
+    
