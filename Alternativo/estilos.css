@@ -2,9 +2,9 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
+
 .landscape {
-    background-image: url("https://www.ecestaticos.com/imagestatic/clipping/8f7/06f/8f706f44f72da44d443eb1221ee27d59/un-cuadro-de-basquiat-bate-el-record-de-subasta-de-un-artista-de-eeuu-99-millones.jpg?mtime=1579565836");
+    background-image: url("https://artist.com/photos/arts/extra-big/girl-wave-1800117135.jpg");
     background-color: #cccccc;
     height: 500px;
     background-position: center;
@@ -22,7 +22,6 @@ body {
     color:white;
     ;
   }
-
 
 .navigation{
     font-size: 20px;
@@ -71,6 +70,9 @@ a:link, a:visited,a:active{
     height: 50%;
     text-align: left;
 }
+#title-2{
+    grid-area: title-2;
+}
 
 .one{
     grid-area: one;
@@ -99,11 +101,10 @@ a:link, a:visited,a:active{
 
 #box-education{
     display: grid;
-    margin-left: 250px;
-    margin-right: 250px;  
     gap: 5px;
     grid-template-columns: 70% 30%;
     grid-template-areas:
+      "title-2 title-2"
       "one two"
       "three four"
       "five six";
@@ -128,6 +129,7 @@ a:link, a:visited,a:active{
         height: 60%;
     }
     #box-education{
+        /*
         grid-template-columns: auto;
         grid-template-areas:
         "one" 
@@ -136,7 +138,40 @@ a:link, a:visited,a:active{
         "four"
         "five "
         "six";
-        align-content: center;   
+        align-items: center;
+        justify-items: flex-start;
+        justify-content: start; */ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #title-2{
+        width: 70%;
+
+    }
+    .one{
+        width: 70%;
+        height: auto;
+    }
+    .two{
+        width: 70%;
+        height: auto;
+    }
+    .three{
+        width: 70%;
+        height: auto;
+    }
+    .four{
+        width: 70%;
+        height: auto;
+    }
+    .five{
+        width: 70%;
+        height: auto;
+    }
+    .six{
+        width: 70%;
+        height: auto;
     }
 
 }
@@ -147,6 +182,28 @@ a:link, a:visited,a:active{
     #perfil{
         margin-left: 250px;
     }
+    #ed{
+        margin-left: 250px
+    }
+    .one{
+        margin-left: 250px;
+    }
+    .two{
+        margin-right: 150px;
+    }
+    .three{
+        margin-left: 250px;
+    }
+    .four{
+        margin-right: 150px;
+    }
+    .five{
+        margin-left: 250px;
+    }
+    .six{
+        margin-right: 150px;
+    }
+    
 }
 @media(max-width:349px){
     #box-1{
@@ -154,13 +211,15 @@ a:link, a:visited,a:active{
         height: 55%;
         text-align: center;
     }
-    #box-education{
-        align-items: center; 
-        grid-template-columns: 100px;
-    } 
+    #box-2{
+        width: 80%;
+    }
 }
 .period{
     font-size: 30px;
     text-align: right;
 }
-    
+
+html{
+    background-color: ivory;
+}
