@@ -1,13 +1,30 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-  }
+const btnToggle = document.querySelector('.toggle-btn');
 
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
+btnToggle.addEventListener('click', function () {
+  console.log('clik')
+  document.getElementById('sidebar').classList.toggle('active');
+  console.log(document.getElementById('sidebar'))
+});
+/*
+$(document).ready(function() {
+
+    function toggleSidebar() {
+      $(".button").toggleClass("active");
+      $("main").toggleClass("move-to-left");
+      $(".sidebar-item").toggleClass("active");
+    }
   
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
+    $(".button").on("click tap", function() {
+      toggleSidebar();
+    });
+  
+    $(document).keyup(function(e) {
+      if (e.keyCode === 27) {
+        toggleSidebar();
+      }
+    });
+  
+  });
+*/
 
 /*document.querySelector('.container').addEventListener('click',()=>{document.querySelector('.navigation').classList})*/

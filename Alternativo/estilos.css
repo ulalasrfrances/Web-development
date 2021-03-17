@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
   }
 
+
 .landscape {
     background-image: url("https://artist.com/photos/arts/extra-big/girl-wave-1800117135.jpg");
     background-color: #cccccc;
@@ -110,6 +111,12 @@ a:link, a:visited,a:active{
       "five six";
   }
 
+@media(min-width:660px){
+    #sidebar{
+        display: none;
+    }
+}
+
 @media(max-width:1113px){
     #box-container{
         flex-direction: column;
@@ -173,6 +180,9 @@ a:link, a:visited,a:active{
         width: 70%;
         height: auto;
     }
+    .sidebar{
+        display: none;
+    }
 
 }
 @media(min-width:1115px){
@@ -232,41 +242,52 @@ html{
         right: 0;
         background-color: azure;
     }*/
-    .container {
-        display: inline-block;
+     
+    .navigation{
+        display: none;
+    }
+
+    #sidebar {
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        background: #151719;
+        left: -200px;
+        transition: all 500ms linear;
+      }
+      
+      #sidebar.active {
+        left: 0px;
+      }
+      
+      #sidebar ul li {
+        color: rgba(230, 230, 230, .9);
+        list-style: none;
+        padding: 15px 10px;
+        border-bottom: 1px solid rgba(100, 100, 100, .3);
+        text-align: center;
+      }
+      
+      .logo {
+        border-radius: 50%;
+        display: block;
+        margin: 0 auto; 
+      }
+      
+      #sidebar .toggle-btn {
+        position: absolute;
+        left: 230px;
+        top: 20px;
         cursor: pointer;
       }
       
-      .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 5px;
-        background-color: #333;
-        margin: 6px 0;
-        transition: 0.4s;
+      #sidebar .toggle-btn span {
+        display: block;
+        width: 40px;
+        text-align: center;
+        font-size: 40px;
+        color: azure;
       }
-      
-      /* Rotate first bar */
-      .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-        transform: rotate(-45deg) translate(-9px, 6px) ;
-      }
-      
-      /* Fade out the second bar */
-      .change .bar2 {
-        opacity: 0;
-      }
-      
-      /* Rotate last bar */
-      .change .bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-        transform: rotate(45deg) translate(-8px, -8px) ;
-      } 
-    .navigation{
-
-    }
-
 }
 
 /*bar button*/
-
- 
