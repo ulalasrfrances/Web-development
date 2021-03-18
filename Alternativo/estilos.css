@@ -230,9 +230,7 @@ a:link, a:visited,a:active{
     text-align: right;
 }
 
-html{
-    background-color: ivory;
-}
+
 
 @media(max-width:660px){
     /*.navigation {
@@ -246,48 +244,6 @@ html{
     .navigation{
         display: none;
     }
-
-    #sidebar {
-        position: fixed;
-        width: 200px;
-        height: 100%;
-        background: #151719;
-        left: -200px;
-        transition: all 500ms linear;
-      }
-      
-      #sidebar.active {
-        left: 0px;
-      }
-      
-      #sidebar ul li {
-        color: rgba(230, 230, 230, .9);
-        list-style: none;
-        padding: 15px 10px;
-        border-bottom: 1px solid rgba(100, 100, 100, .3);
-        text-align: center;
-      }
-      
-      .logo {
-        border-radius: 50%;
-        display: block;
-        margin: 0 auto; 
-      }
-      
-      #sidebar .toggle-btn {
-        position: absolute;
-        left: 230px;
-        top: 20px;
-        cursor: pointer;
-      }
-      
-      #sidebar .toggle-btn span {
-        display: block;
-        width: 40px;
-        text-align: center;
-        font-size: 40px;
-        color: azure;
-      }
 }
 
 /*bar button*/
