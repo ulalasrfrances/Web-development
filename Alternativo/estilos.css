@@ -246,4 +246,45 @@ a:link, a:visited,a:active{
     }
 }
 
-/*bar button*/
+/*Footer*/
+#footer{
+    height: 100%;
+    display: flex;
+    background-color: aquamarine;
+}
+#box-1-footer{
+    width: 50%;
+    text-align: left;
+}
+
+#box-2-footer{
+    width: 50%;
+    text-align: right;
+}
+#Copyright{
+    margin-top: 60px;
+}
+#box-1-footer-content{
+    margin-left: 26%;
+}
+#footer #box-2-footer dl dt {
+    display: inline-block;
+    margin-right: 30px;
+}
+.icons{
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: 99px;
+    overflow: hidden;
+}
+#facebook{
+    background-image: url('/Alternativo/icons/facebook.svg');
+}
+#linkedin{
+    background: url('/Alternativo/icons/linkedin.svg')
+}
+#github{
+    background-image: url();
+}
+
