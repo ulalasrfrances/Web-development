@@ -1,4 +1,13 @@
-$(document).ready(function() {
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+/*$(document).ready(function() {
 
   function toggleSidebar() {
     $(".button").toggleClass("active");
@@ -16,7 +25,7 @@ $(document).ready(function() {
     }
   });
 
-});
+});*/
 
 /*const btnToggle = document.querySelector('.toggle-btn');
 
