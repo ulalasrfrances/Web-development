@@ -10,11 +10,11 @@ body {
 .landscape {
     background-image: url("https://artist.com/photos/arts/extra-big/girl-wave-1800117135.jpg");
     background-color: #cccccc;
-    height: 500px;
+    height: 937px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position:relative;  
 }
 
 .principal {
@@ -215,6 +215,9 @@ a:link, a:visited,a:active{
     }
     .six{
         margin-right: 150px;
+    }
+    #proyectos{
+        margin-left: 13%;  
     }
     
 }
